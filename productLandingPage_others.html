@@ -1,0 +1,215 @@
+<head>
+	<style>
+	.navbar-right {
+	padding-right: 40px;
+}
+
+.jumbotron {
+	background-color: white;
+	margin: 80px 10px 10px 10px;
+}
+
+.hero-image {
+	width: 80%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.intro {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-left: 40px;
+	margin-right: 40px;
+	padding: 10px;
+}
+
+#video,
+h4 {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.product-heading {
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+#products {
+	/*display: flex;
+justify-content: center;
+align-items: center;*/
+	margin: 10px 20px 10px 20px;
+}
+
+.caption {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+form {
+	display: block;
+	margin-left: 40px;
+	margin-right: 40px;
+}
+
+#form {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.contact-heading {
+	text-align: center;
+}
+
+@media (max-height: 800px) {
+	p,
+	h1,
+	h2,
+	h3 {
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+	}
+	p {
+		font-size: 12px;
+	}
+	h1 {
+		font-size: 18px;
+	}
+	h2 {
+		font-size: 15px;
+	}
+}
+
+footer {
+	display: block;
+	margin: 30px auto 0 auto;
+	padding-top: 20px;
+	text-align: center;
+	background-color: #e7e7e7;
+	height: 60px;
+}
+	</style>
+</head>
+
+<div class="container">
+	<header id="header">
+		<nav class="navbar navbar-default navbar-fixed-top" id="nav-bar">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+					<a class="navbar-brand nav-link" href="#header-img">Fermented Goods INC.</a>
+				</div>
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav navbar-right">
+						<li class="nav-link"><a href="#about">about</a></li>
+						<li class="nav-link"><a href="#contact">contact</a></li>
+						<li class="nav-link"><a href="#products">shop</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div class="jumbotron">
+			<img class="hero-image" id="header-img" src="https://upload.wikimedia.org/wikipedia/commons/c/c0/Korean_cuisine-Kimchi-07.jpg" alt="kimchi">
+		</div>
+	</header>
+<hr>
+	<body>
+		<div class="row">
+			<div class="intro" id="about">
+				<h1>Fermented Goods INC.</h1>
+				<h2>Your source of fermented foods</h2>
+				<p>Donec rutrum congue leo eget malesuada. Vivamus suscipit tortor eget felis porttitor volutpat. Sed porttitor lectus nibh. Donec sollicitudin molestie malesuada. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				<br>
+				<p>Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Nulla quis lorem ut libero malesuada feugiat. Sed porttitor lectus nibh. Curabitur aliquet quam id dui posuere blandit. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.</p>
+			</div>
+		</div>
+		<hr>
+		<div class="row well">
+			<h4>DIY Kimchi</h4>
+			<div class="embed-responsive embed-responsive-16by9">
+			<iframe width="560" height="315" class="embed-responsive-item" id="video" src="https://www.youtube.com/embed/eTucCw1w6Ak" frameborder="0" allowfullscreen></iframe>
+			</div>
+		</div>
+		<hr>
+		<h3 class="product-heading">Products</h3>
+		<div class="row" id="products">
+			<div class="col-sm-6 col-md-4">
+				<div class="thumbnail">
+					<img src="https://c1.staticflickr.com/4/3100/3146936083_9ccb58f811_b.jpg" alt="Pickles">
+					<div class="caption">
+						<h3>Pickles</h3>
+						<p>Naturally Fermented Pickles</p>
+						<p><a href="#" class="btn btn-primary" role="button">Shop</a></p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-6 col-lg-4">
+				<div class="thumbnail">
+					<img src="https://c1.staticflickr.com/4/3100/3146936083_9ccb58f811_b.jpg" alt="Saurkraut">
+					<div class="caption">
+						<h3>Saurkraut</h3>
+						<p>Shredded cabbage in brine.</p>
+						<p><a href="#" class="btn btn-primary" role="button">Shop</a></p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-4">
+				<div class="thumbnail">
+					<img src="https://c1.staticflickr.com/4/3100/3146936083_9ccb58f811_b.jpg" alt="Yogurt and Kefir">
+					<div class="caption">
+						<h3>Yogurt and Kefir</h3>
+						<p>Cultured dairy products</p>
+						<p><a href="#" class="btn btn-primary" role="button">Shop</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<hr>
+		<div class="row">
+
+			<form class="well form-horizontal" id="form" action="https://www.freecodecamp.com/email-submit" method="post">
+				<h3 class="contact-heading" id="contact">Contact Us</h3>
+				<p class="contact-heading">Please take a moment to let us know how we can serve you better or what other products you would like us to source for you.</p>
+				<div class="form-group">
+					<label class="col-sm-2 control-label" for="FirstName">First Name</label>
+					<div class="col-sm-10"><input type="text" class="form-control" id="FirstName" placeholder="First Name"></div>
+				</div>
+				<div class="form-group">
+					<label class="col-sm-2 control-label" for="LastName">Last Name</label>
+					<div class="col-sm-10"><input type="text" class="form-control" id="LastName" placeholder="Last Name"></div>
+				</div>
+				<div class="form-group">
+					<label class="col-sm-2 control-label" for="email">Email</label>
+					<div class="col-sm-10"><input type="email" class="form-control" id="email" placeholder="Email"></div>
+				</div>
+				<div class="form-group">
+					<label class="col-sm-2 control-label" for="Message">Detailed Message</label>
+					<div class="col-sm-10"><textarea class="form-control" id="message" rows="7"></textarea></div>
+				</div>
+				<div class="form-group">
+					<input class="btn btn-default btn-lg" id="submit" type="submit" value="Submit" form-control>
+				</div>
+		</div>
+		</form>
+</div>
+	<footer class="footer">
+      <div class="container">
+        <p class="text-muted">Created by Chris Dalton</p>
+      </div>
+    </footer>
+</body>
+</div>

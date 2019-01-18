@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+header {
+	display:flex;
+	margin-bottom: 40px;
+}
+#header-img{
+	display: inline-block;
+	position:fixed;
+	margin-bottom:30px;
+	width:10%;
+	height:5%;
+}
+ul {
+
+	list-style-type: none;
+	margin: 0%;
+	padding: 0;
+	overflow: hidden;
+	width: 100%;
+	position:fixed;
+}
+
+li {
+	float: right;
+	display: inline;
+}
+li a {
+	display: block;
+	color: black;
+	text-align: center;
+	padding: 10px 10px;
+	text-decoration: none;
+}
+section {
+	display: block;
+}
+#about{
+	text-align:center;
+}
+#video{
+	margin:auto;
+	display:block;
+}
+#order {
+	text-align:center;
+}
+#togoOrder {
+	text-align:center;
+}
+input[type=text],input[type=tel], input[type=email], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #00ced1;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  display:inline-block;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #234;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+</style>
+</head>
+<body>
+	<header id="header">
+		<img id = "header-img" src="21575ac30ecdc19.jpg" alt="Sushi to go!" />
+		<nav id="navbar">
+		<ul>
+			<li><a id="nav-link" href="#order">Order</a></li>
+			<li><a id="nav-link" href="#togoOrder">To GO Menu</a></li>
+			<li><a id="nav-link" href="#about">Features</a></li>
+		</ul>
+		</nav>
+	</header>
+	<div>
+		<section id="about">
+			<h2>Features</h2>
+			<h3> Fresh Ingrient</h3>
+			<p>The ingrients are delivered from the farmers to the kitchen daily.</p>
+			<p>All the unsold sushies will be discard at the end of the day!</p>
+			<h3> Homemade style</h3>
+			<p>All the sushi are hand made by the experience sushi expert.</p>
+			<h3> Convient </h3>
+			<p>The order will be ready within 20 minutes</p>
+			<p>You can enjoy the most fresh made Sushi here!</p>
+		</section>
+		<h4 style="text-align:center">How to make a California rolls </h4>
+		<iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/nxX3XKE94W8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>
+	<div>
+		<section id="togoOrder">
+			<h1> To Go Menu</h1>
+				<div class="card">
+				  <img src="california-roll-sushi-205.jpg" alt="California Roll" style="width:100%">
+				  <h3>California Roll</h3>
+				  <p class="price">$3.75</p>
+				  <p>A roll made of cucumber, imitation crab, and avocado.</p>
+				  <p> 6 pieces/order</p>
+				  <p>Orders: <input type="number" name="cOrder"value="1" min="1" max="5"/></p>
+				  <p><button onclick="orderCaliforniaRoll()">Order</button></p>
+				</div>
+				<div class="card">
+				  <img src="futomaki-sushi-205.jpg" alt="Futomaki" style="width:100%">
+				  <h3>Futomaki</h3>
+				  <p class="price">$5.00</p>
+				  <p>A roll made with egg, kanpyo, cucumber and mushrooms.</p> 
+				  <p>6 pieces/order.</p>
+				  <p>Orders: <input type="number" name="fOrder"value="1" min="1" max="5"/></p>
+				  <p><button onClick="orderFutomaki()">Order</button></p>
+				</div>
+				<div class="card">
+				  <img src="Inarizushi-photo-205.jpg" alt="Inarizushi" style="width:100%">
+				  <h3>Inarizushi</h3>
+				  <p class="price">$3.50</p>
+				  <p>A fried tofu pouch filled with sushi rice.</p>
+				  <p> 6 pieces/order</p>
+				  <p></p>
+				  <p>Orders: <input type="number" name="iOrder" value="1" min="1" max="5"/></p>
+				  <button onclick="orderInar()">Order</button>
+				</div>
+		</section>
+	</div>
+	<div>
+		<section id="order">
+		  <h2>Your Order</h2>
+		  <form id="form" action="https://www.freecodecamp.com/email-submit">
+		    <div class="row">
+		      <div class="col-25">
+		        <label for="fname">Name:</label>
+		      </div>
+		      <div class="col-75">
+		        <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+		      </div>
+		    </div>
+		    <div class="row">
+		      <div class="col-25">
+		        <label for="pnum">Phone Number:</label>
+		      </div>
+		      <div class="col-75">
+		        <input type="tel" id="pnum" name="phonenumber" placeholder="Your phone number.." required>
+		      </div>
+		    </div>
+		    <div class="row">
+		      <div class="col-25">
+		        <label for="pnum">Email:</label>
+		      </div>
+		      <div class="col-75">
+		        <input type="email" id="email" name="phonenumber" placeholder="Your email address.." required>
+		      </div>
+		    </div>
+		    <div class="row">
+		      <div class="col-25">
+		        <label for="subject">Your order:</label>
+		      </div>
+		      <div class="col-75">
+		        <textarea id="orderDetail" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+		      </div>
+		    </div>
+		    <div class="row">
+		      <input type="submit" id="submit" value="Submit">
+		    </div>
+		  </form>
+		</section>
+	</div>
+</div>
+<script type="text/javascript" src="productLanding.js"></script>
+</body>
+</html>
